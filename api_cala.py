@@ -18,7 +18,7 @@ def index():
 def read_items(q:int):
     ents = []
     vaders_content_show = vaders_content[:q]
-    print(vaders_content_show[:q])
+    # print(vaders_content_show[:q])
     for index, row in vaders_content_show.iterrows():
         if index < q:
             ents.append({"content": row['content'],
@@ -31,4 +31,4 @@ def read_items(q:int):
 #    return {'Welcome To Krish Youtube Channel': f'{name}'}
 
 if __name__ == '__main__':
-    uvicorn.run(app, host = '127.0.0.1', port = 8000)
+    uvicorn.run(app, host = 'https://api-cala.herokuapp.com/', port = 8000)
