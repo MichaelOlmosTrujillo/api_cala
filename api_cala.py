@@ -7,7 +7,7 @@ Created on Sun May 29 07:54:37 2022
 from fastapi import FastAPI
 import uvicorn
 import pandas as pd
-from analisis import vaders_content
+# from analisis import vaders_content
 
 app = FastAPI()
 
