@@ -82,7 +82,7 @@ vaders = vaders.merge(df_mi_claro, how = 'left')
 # vaders.head()
 # print(vaders.columns)
 vaders_content = vaders[['content', 'neg', 'pos', 'compound']]
-#! vaders_content.to_csv('vaders_content.csv', sep = ',')
+vaders_content.to_csv('vaders_content.csv', sep = ',')
 # vaders_content.head()
 
 # Plot VADER results

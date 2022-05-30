@@ -18,7 +18,7 @@ def index():
 @app.get("/items/{q}")
 def read_items(q:int):
     ents = []
-    #! vaders_content = pd.read_csv('vaders_content.csv', sep = ',')
+    vaders_content = pd.read_csv('vaders_content.csv', sep = ',')
     vaders_content_show = vaders_content[:q]
     # print(vaders_content_show[:q])
     for index, row in vaders_content_show.iterrows():
