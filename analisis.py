@@ -59,12 +59,12 @@ sia = SentimentIntensityAnalyzer()
 # example_polarity_2 = sia.polarity_scores(example_2)
 # print(example_polarity_2)
 # Null values in content column
-print(df_mi_claro.isnull().sum())
-print(df_mi_claro.shape)
+# print(df_mi_claro.isnull().sum())
+# print(df_mi_claro.shape)
 # Drop 8 rows where content column is null
 df_mi_claro = df_mi_claro[df_mi_claro['content'].notnull()]
-print(df_mi_claro.isnull().sum())
-print(df_mi_claro.shape)
+# print(df_mi_claro.isnull().sum())
+# print(df_mi_claro.shape)
 # Run polarity score on the entire dataset
 
 # We save the results in a dictionary
@@ -82,6 +82,7 @@ vaders = vaders.merge(df_mi_claro, how = 'left')
 # vaders.head()
 # print(vaders.columns)
 vaders_content = vaders[['content', 'neg', 'pos', 'compound']]
+vaders_content.to_csv('vaders_content.csv', sep = ',')
 # vaders_content.head()
 
 # Plot VADER results
