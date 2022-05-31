@@ -11,5 +11,9 @@
    to give the positive, negative, neutral and compound values for each 
    comment
 8. The model for step 4 use a random forest classification algorithm.
+<<<<<<< HEAD
 
    
+=======
+   
+>>>>>>> 743951bd52c79d4327e2575d8c0f16c50ab2ed78
